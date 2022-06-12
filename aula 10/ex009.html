@@ -5,14 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JS</title>
+    <style>
+        body{
+            font: normal 16px arial;
+
+        }
+
+        input{
+            text-align: center;
+            height: 20px;
+            width: 100px;
+        }
+
+        .Bts{
+            height: 27px;
+        }
+
+        div{
+            margin-top: 10px;
+        }
+    </style>
+
 </head>
 <body>
     <h1>Somando valores</h1>
     <input type="number" name="tex1" id="n1"> +
     <input type="number" name="tex1" id="n2">
-    <input type="button" value="somar" onclick="somar()">
+    <input class="Bts" type="button" value="somar" onclick="somar()">
     <div id="res">resultado:</div>
 
+    
     <script>
         function somar() {
             var nt1 = document.querySelector('#n1')
@@ -21,7 +43,7 @@
             n1 = Number(nt1.value)
             n2 = Number(nt2.value)
             var s = n1 + n2
-            res.innerHTML = (`A soma de ${n1} e ${n2} é igual a ${s}`)
+            res.innerHTML = (`A soma de ${n1} e ${n2} é igual a <strong>${s}<strong</>`)
 
             
 
