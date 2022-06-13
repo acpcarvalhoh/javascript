@@ -1,3 +1,3 @@
-var s = 60.5
+var s = 16.8
 console.log(s)
 
