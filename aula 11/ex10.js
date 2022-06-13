@@ -1,1 +1,3 @@
-console.log('Testando Js')
+var s = 60.5
+console.log('s')
+
