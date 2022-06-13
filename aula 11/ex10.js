@@ -1,3 +1,3 @@
 var s = 60.5
-console.log('s')
+console.log(s)
 
