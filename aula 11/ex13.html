@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+    <style>
+        body{
+            font: normal 16px arial;
+        }
+        input{
+            text-align: center;
+            width: 100px;
+            height: 30px;
+        }
+
+        span{
+            font-size: 1.4em;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>Sistema de multa</h1>
+   <span>Velocidade do carro</span> <input type="number" id="txt" name="multa"> <span>KM/H</span>
+   <input type="button" value="Calcular" onclick="Calcular()">
+   <div id="res"></div>
+   <p></p>
+
+   <script>
+    
+    function Calcular(){
+        var s = document.getElementById('txt')
+        var res = document.querySelector('#res')
+        ac = Number(s.value)
+        res.innerHTML = `<p>Sua velociade atual é de <strong>${ac} KM/h</strong></p>`
+        if (ac > 70){
+            res.innerHTML +=  `<strong>MULTADO</strong> velocidade máxima permitida <strong>70km/h<strong/>`
+        
+        }
+         
+        
+
+    }
+
+   </script>
+</body>
+</html>
