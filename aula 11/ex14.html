@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+    <style>
+        body{
+            font: normal 18px arial;
+        }
+
+        input{
+            font-size: 18px;
+            text-align: center;
+        }
+
+        input::placeholder{
+            text-align: left;
+        }
+
+        span{
+            text-transform: uppercase;
+            font-size: 18px;
+
+        }
+        div{
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste de nacionalidade</h1>
+
+    <span>Digite o nome do país
+        <input type="text" id="txt" name="multa" placeholder="Pesquisar..."> </span>
+    <input type="button"  value="Enviar" onclick="Enviar()">
+    <div id="res"></div>
+
+    <script>
+        function Enviar(){
+            var pais = window.document.querySelector(('#txt')).value.toLowerCase()
+            var res = document.querySelector('#res')
+            if (pais == 'brasil'){
+                res.innerHTML = `Vivendo em ${pais} <strong>'BRASILEIRO'<strong/>`
+            }else{
+                res.innerHTML = `Vivendo em ${pais} <strong>'EXTRANGEIRO'<strong/>`
+
+            }
+                 
+
+
+        }
+    </script>
+</body>
+</html>
