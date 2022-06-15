@@ -30,6 +30,17 @@ div{
 
 footer{
     text-align: center;
+    font-style: italic;
+    color: #fff;
+}
+
+footer a{
+    text-decoration: none;
+    color: #fff;
+}
+
+footer a:hover{
+    text-decoration: underline;
 }
 
 img{
