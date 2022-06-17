@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de JS</title>
+    <link rel="stylesheet" href="estilo/style.css">
+</head>
+<body>
+    <h1>VERIFICADOR DE IDADE</h1>
+    <section>
+        
+            <label for="nasc">Ano de nascimento</label>
+            <input id="nasc" type="number" name="nascimento" placeholder="EX:1994"><br>
+            <span>Sexo:</span>
+            <label for="sexM">Masculino</label>
+            <input  id="sexM" type="radio" value="sexoM" name="vsexo">
+            <label for="sexF">Feminino</label>
+            <input id="sexF" type="radio" value="sexoF" name="vsexo"><br>
+            <input type="button" value="verificar" onclick="verificar()">
+            
+            <div id="result">
+                Preencha os dandos aima para ver o resultado
+            </div>
+        
+    </section>
+    
+    <script src="JS/script.js"></script>
+</body>
+</html>
