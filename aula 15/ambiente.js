@@ -1,4 +1,4 @@
-var c = 100
-while (c < 101){
-    console.log('Bom dia!!')
+var c = 10
+while (c < 11){
+    console.log('Olá')
 }
