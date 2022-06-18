@@ -11,10 +11,20 @@ function Enviar() {
         let i = Number(start.value)
         let e = Number(end.value)
         let f = Number(step.value)
+        if (f <= 0) {
+            window.alert('Passo inválido!! Considerando passo 1')
+            f = 1
+        }
 
         for (var c = i; c <= e; c += f){
             res.innerHTML += `${c} `
+            //contagem crescente
 
+        }
+
+        for (var c = i; c >= e; c -= f){
+            res.innerHTML += `${c} `
+            //contagem regressiva
         }
         
     }
