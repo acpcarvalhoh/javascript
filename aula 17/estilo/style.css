@@ -1,0 +1,48 @@
+@charset "UFT-8";
+
+body{
+    background-color: #00a2ff;
+    font: normal 18px arial;
+}
+ header h1{
+    color: aliceblue;
+    text-align: center;
+ }
+
+ section{
+    margin: auto;
+    max-width: 600px;
+    background-color: aliceblue;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 20px;
+ }
+
+ input{
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 20px;
+ }
+
+ select{
+    padding: 5px;
+    width: 200px;
+    overflow: auto;
+    background-color: #00a2ff;
+    color: aliceblue;
+    font-weight: bolder;
+    font-size: 18px;
+ }
+
+ option:hover{
+    background-color: black;
+
+ }
+
+ option{
+    
+    width: 188px;
+    padding: 5px;
+    margin: -5px -5px;
+    
+ }
