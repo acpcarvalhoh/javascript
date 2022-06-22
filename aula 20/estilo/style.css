@@ -1,0 +1,30 @@
+@charset "UFT-8";
+
+body{
+    font: normal 25px arial;
+    background-color: rgb(0, 149, 255);
+}
+
+section{
+    background-color: antiquewhite;
+    max-width: 600px;
+    margin: auto;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+header h1{
+    text-align: center;
+}
+
+select{
+    display: block;
+    overflow: auto;
+    width: 150px;
+    margin-top: 15px;
+    
+    
+}
+input{
+    text-align: center;
+}
